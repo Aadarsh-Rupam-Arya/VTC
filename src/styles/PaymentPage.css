@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto ;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.amount{
+    padding-top: 40px;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.payment-method {
+    padding: 20px ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.payment-method:hover {
+    background-color: #f0f0f0;
+}
+
+.payment-method img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.payment-method p {
+    margin: 0;
+}
+
+.payment-details {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.credit-card-form,
+.upi-qr,
+.gpay-qr {
+    display: none;
+    margin-top: 20px;
+}
+
+.credit-card-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.qr-code {
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.loading-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.loading-circle {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    border-top-color: #333;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.submit-btn {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.timer, .red {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.red button {
+    background: rgb(77, 129, 218);
+    padding: 10px;
+    font-size: 1.5vw;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    border-radius: 1vw;
+}
+
+.submit-btn button {
+    background: rgb(77, 129, 218);
+    padding: 10px;
+    font-size: 1.5vw;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    border-radius: 1vw;
+}
+
+.gpay-qr img {
+    height: 30vw;
+    text-align: center;
+}
+
+.upi-qr img {
+    height: 30vw;
+    text-align: center;
+}
+
+
+.success-message {
+    margin-bottom: 0px;
+}
+
+
+
+.success-message {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(to right, #76c893, #34a0a4);
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.success-message h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.success-message .order-id {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffe6a7;
+}
+
+.success-message .order-note {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ffffffcc;
+}
+
+.success-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #ffe6a7;
+}
+
+.payment-method {
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.payment-method:hover {
+    transform: scale(1.1);
+}
+
+.timer {
+    font-size: 18px;
+    color: #f57c00;
+    margin-top: 15px;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.6;
+    }
+}
+
+.track-order-button {
+    background-color:#aa35c2 ;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.track-order-button:hover {
+    background-color: #007bff;
+}
+
+.submit-class{
+    padding: 10px 15px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.submit-class:hover{
+    background-color: #218838;
+
+}

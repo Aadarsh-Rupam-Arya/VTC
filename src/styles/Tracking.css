@@ -1,0 +1,32 @@
+.tracking-page {
+    padding: 6rem 5rem 5rem 5rem;
+}
+
+.tracking-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.step.completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.step.active {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.step-date {
+    font-weight: bold;
+}

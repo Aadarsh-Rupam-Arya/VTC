@@ -1,0 +1,85 @@
+
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+   
+    transition: transform 0.3 s;
+    flex: 1 1 calc(18% - 20px); /* Ensures five products in a row */
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    border-radius: 8px; /* Optional: Rounds the corners */
+    padding: 1rem; /* Optional: Adds some padding around the content */
+    background-color: #fff; /* Optional: Ensures background is white */
+    transition: box-shadow 0.3 s ease; /* Smooth transition for hover effect */
+
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;          /* Set width to 100% of container */
+    height: 200px;        /* Fixed height for all containers */
+    object-fit: contain;  /* Ensures the whole image is visible inside the container */
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto 10px;  /* Centers the image horizontally */
+    background-color: #fefdfd; /* Adds background to fill empty space around image */
+}
+
+.product-card h2 {
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 1em;
+    color: #333;
+}
+
+.product-card button {
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #218838;
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+
+/* Popup styles */
+.popup {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: white;
+    padding: 3px ;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInOut 2s;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+    20% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    80% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+}

@@ -1,0 +1,11 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: space-between; /* Adjust to space items evenly */
+    padding: 20px;
+}
+
+.product-list .product-card {
+    flex: 1 1 calc(18% - 20px); /* Adjusted to fit five cards in a row */
+    margin: 10px;
+}

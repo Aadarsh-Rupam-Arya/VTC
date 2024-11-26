@@ -1,0 +1,107 @@
+body {
+    padding-top: 56vw; /* Adjust based on your navbar height */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar .nav-link {
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar .navbar-brand{
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.navbar .navbar-brand:hover{
+    font-weight: bold;
+    color:  rgb(255, 255, 0);
+}
+
+.navbar .nav-link:hover {
+    color: rgb(255, 255, 0); /* Change to yellow on hover */
+}
+
+.navbar .form-inline {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .form-control {
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.navbar .btn {
+    border-radius: 5px;
+}
+
+.nav-link {
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 0); /* Change to yellow on hover */
+}
+
+
+/* Styling for the rest of the navbar */
+.navbar .nav-link {
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar .nav-link:hover {
+    color: rgb(255, 255, 0);
+}
+
+
+/* Search Bar */
+
+.search-form .form-control {
+    border: 2px solid #ffffff; /* White border */
+    padding: 0.5rem 1rem; /* Padding inside the input */
+    margin-right: 10px; /* Space between input and button */
+    background-color: rgba(255, 255, 255, 0.2); /* Light background for the input */
+    color: white; /* Text color */
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+.search-form .form-control::placeholder {
+    color: white; /* Placeholder text color */
+    opacity: 0.8; /* Slightly transparent */
+}
+
+.search-form .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly darker background on focus */
+    outline: none; /* Remove default outline */
+}
+
+.search-bar-wrapper {
+    position: relative;
+    width: 22rem; /* Adjust width as needed */
+}
+
+.search-bar::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+
+
+
+
+
